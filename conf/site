@@ -1,4 +1,8 @@
-#!/bin/sh
-npm install
-npm build
-docker build -t react-project .
+server {
+    # 监听80端口
+    listen       80;
+    # 所有服务名字
+    server_name  _;
+    # 静态文件根目录
+    root         /etc/nginx/html;
+}
